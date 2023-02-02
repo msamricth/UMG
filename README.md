@@ -5,4 +5,4 @@
  - [Wordpress](https://wordpress.org/)
  - [Divi (theme + plugin)](https://www.elegantthemes.com/gallery/divi/)
 
- UMG - Theme includes [ACF](https://www.advancedcustomfields.com/)
+ UMG - Theme includes [ACF](https://www.advancedcustomfields.com/) - ACF needs to be manually downloaded and approriate files included in '/includes/acf/'.
