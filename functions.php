@@ -14,7 +14,7 @@ add_action( 'wp_enqueue_scripts', 'divichild_enqueue_scripts' );
  * @since v1.0
  */
 $theme_ACFPro = __DIR__ . '/includes/acf.php';
-$theme_ACFProDIR  = __DIR__ . '/includes/acf/;
+$theme_ACFProDIR  = __DIR__ . '/includes/acf/';
 if ( is_readable( $theme_ACFPro ) ) {
 	require_once $theme_ACFPro;
 }

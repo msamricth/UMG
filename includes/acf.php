@@ -59,3 +59,23 @@ add_filter(
         return $attributes;
     }
 );
+
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+    
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+        
+        // register the careers search block.
+        acf_register_block_type(array(
+            'name'              => 'careers_searchbar',
+            'title'             => __('Careers Searchbar'),
+            'description'       => __('A custom Careers Searchbar block.'),
+            'render_template'   => 'template-parts/blocks/careers/searchbar.php',
+			'category' 				=> 'supply-blocks',
+            'icon'              => 'search',
+            'keywords'          => array( 'Careers', 'searchbar' ),
+        ));
+    }
+
+}
