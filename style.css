@@ -41,18 +41,7 @@ h5 {
     }
 }
 
-@media only screen and (min-width: 982px) {
-    h1 {
-        font-size: 58.42px;
-    }
-    h3 {
-        font-size: 36.28px;
-        font-weight: 600;
-    }
-    h5 {
-        font-size: 22.54px;
-    }
-}
+
 .block-careers-value-grid {
     display: flex;
     flex-wrap: wrap;
@@ -78,8 +67,13 @@ h5 {
     padding-top:8px;
 }
 .block-careers-value-grid__col:nth-child(1):after, .block-careers-value-grid__col:nth-child(2):after {content: '';border-bottom: 1px solid #E3E3E3;display: block;position: absolute;bottom: 0;width: calc(100% - 8px);}
-.block-careers-value-grid__col:nth-child(4):before, .block-careers-value-grid__col:nth-child(2):before {height: 100%;height: calc(100% - 8px);content: '';top: 0;left: 0;border-left: 1px solid #E3E3E3;display: block;position: absolute;bottom: 0;/* width: calc(100% + 8px); */}
+.block-careers-value-grid__col:nth-child(4):before, .block-careers-value-grid__col:nth-child(2):before {height: calc(100% - 8px);content: '';top: 0;left: 0;border-left: 1px solid #E3E3E3;display: block;position: absolute;bottom: 0;/* width: calc(100% + 8px); */}
+
+.block-careers-value-grid__col:nth-child(2):before {
+    height: calc(100% - 8px);
+}
 .block-careers-value-grid__col:nth-child(4):before {
+    height: calc(100% - 16px);
     top:8px;
 }
 
@@ -89,4 +83,48 @@ h5 {
 
 .block-careers-value-grid__col h5 {
     color: #003E51;
+}
+
+article#post-27838 .et_pb_gallery_items.et_post_gallery.clearfix {
+    display: flex;
+}
+article#post-27838 .et_pb_gallery_items.et_post_gallery.clearfix {
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+}
+article#post-27838 .et_pb_gallery_grid .et_pb_gallery_item {
+    width: 31%;
+}
+article#post-27838 .et_pb_gallery_grid .et_pb_gallery_item img {
+    height: 100%;
+    width: auto;
+}
+article#post-27838 .et_pb_gallery_grid .et_pb_gallery_image {
+    padding: 20px;
+}
+article#post-27838 .et_pb_gallery_grid .et_pb_gallery_image:nth-child(6), .et_pb_gallery_grid .et_pb_gallery_image:nth-child(3) {
+    padding-right: 0;
+}
+article#post-27838 .et_pb_gallery_grid .et_pb_gallery_image:nth-child(1), .et_pb_gallery_grid .et_pb_gallery_image:nth-child(4) {
+    padding-left: 0;
+}
+@media only screen and (min-width: 982px) {
+    
+    article#post-27838 .et_pb_gallery_items.et_post_gallery.clearfix {
+        flex-wrap:nowrap;
+    }
+    article#post-27838 .et_pb_gallery_grid .et_pb_gallery_item {
+        width: auto;
+    }
+    h1 {
+        font-size: 58.42px;
+    }
+    h3 {
+        font-size: 36.28px;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 22.54px;
+    }
 }
