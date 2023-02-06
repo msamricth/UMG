@@ -76,6 +76,16 @@ function my_acf_init_block_types() {
             'icon'              => 'search',
             'keywords'          => array( 'Careers', 'searchbar' ),
         ));
+         // register the careers Values block.
+         acf_register_block_type(array(
+            'name'              => 'careers_Value',
+            'title'             => __('UMG Side by side'),
+            'description'       => __('A block that allows you to add a title and content in a 4x4 grid'),
+            'render_template'   => 'template-parts/blocks/careers/values.php',
+			'category' 				=> 'supply-blocks',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'Careers', 'values', 'grid' ),
+        ));
     }
 
 }

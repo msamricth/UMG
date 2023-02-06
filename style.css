@@ -9,5 +9,84 @@ Template: Divi
 ======================================*/
 
 
-/* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
+/* Declaring some commonly used font stuff so it doesnt need to be manually declared in divi for each block */
 
+h1 {
+    font-family: 'Franklin Heavy',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.36;
+}
+h2 {}
+h3 {
+    font-family: 'Franklin Demi Cond',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.125;
+}
+h5 {    
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.info-link {
+    border-bottom: 1px solid;
+    color: #50A684;
+    padding-bottom: 4px;
+    font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+    h1 {
+    }
+}
+
+@media only screen and (min-width: 982px) {
+    h1 {
+        font-size: 58.42px;
+    }
+    h3 {
+        font-size: 36.28px;
+        font-weight: 600;
+    }
+    h5 {
+        font-size: 22.54px;
+    }
+}
+.block-careers-value-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-careers-value-grid__col {
+    position: relative;
+    width: 50%;
+}
+.block-careers-value-grid__col p:last-child {
+    padding-bottom:24px;
+}
+.block-careers-value-grid__col:nth-child(1), .block-careers-value-grid__col:nth-child(3) {
+    padding-right:24px;
+}
+.block-careers-value-grid__col:nth-child(2), .block-careers-value-grid__col:nth-child(4) {
+    padding-left:24px;
+}
+.block-careers-value-grid__col:nth-child(3), .block-careers-value-grid__col:nth-child(4) {
+    padding-top:24px;
+}
+.block-careers-value-grid__col:nth-child(1), .block-careers-value-grid__col:nth-child(2) {
+    padding-top:8px;
+}
+.block-careers-value-grid__col:nth-child(1):after, .block-careers-value-grid__col:nth-child(2):after {content: '';border-bottom: 1px solid #E3E3E3;display: block;position: absolute;bottom: 0;width: calc(100% - 8px);}
+.block-careers-value-grid__col:nth-child(4):before, .block-careers-value-grid__col:nth-child(2):before {height: 100%;height: calc(100% - 8px);content: '';top: 0;left: 0;border-left: 1px solid #E3E3E3;display: block;position: absolute;bottom: 0;/* width: calc(100% + 8px); */}
+.block-careers-value-grid__col:nth-child(4):before {
+    top:8px;
+}
+
+.block-careers-value-grid__col:nth-child(2):after {
+    left: 8px;
+}
+
+.block-careers-value-grid__col h5 {
+    color: #003E51;
+}
