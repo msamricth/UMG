@@ -86,6 +86,17 @@ function my_acf_init_block_types() {
             'icon'              => 'format-aside',
             'keywords'          => array( 'Careers', 'values', 'grid' ),
         ));
+        
+         // register Repeatable Card block.
+         acf_register_block_type(array(
+            'name'              => 'repeatable_card',
+            'title'             => __('UMG Repeatable Card block'),
+            'description'       => __('A block that allows you to add multiple content cards'),
+            'render_template'   => 'template-parts/blocks/careers/cards.php',
+			'category' 				=> 'supply-blocks',
+            'icon'              => 'format-aside',
+            'keywords'          => array( 'Careers', 'cards', 'grid' ),
+        ));
     }
 
 }
